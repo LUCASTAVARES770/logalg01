@@ -28,13 +28,30 @@
 
             // Ler o valor da 'senha' digitado
             var formSenha = senha.value;
-            // Testa se uduário e senha estão corretos
-             
+            // Testa se usuário e senha estão corretos
+             if (
+                 //primeira expressão
+                 formUsuario == loginUsuario //true
 
-            console.log('clicou');
-            return false;
+                 // AND
+                 &&
+
+                 //Segunda expressão
+                 formSenha == loginSenha //true
+            ) {
+
+
+            // Escreve na caixa de mensagem
+            console.log('usuario ok.');
+            
+        } else {
+            console.error('oooops!')
         }
-    </script>    
-</body>
+
+
+
+            
+          </script>    
+         </body>
     
-</html>
+         </html>
